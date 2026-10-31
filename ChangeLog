@@ -1,3 +1,18 @@
+2026-10-31  Gavin Smith <gavinsmith0123@gmail.com>
+
+	Do not complain about wrong Up pointer for nodes in Top node menu
+
+	* tta/perl/Texinfo/StructuringNonXS.pm
+	(check_node_tree_menu_structure) [CHECK_NORMAL_MENU_STRUCTURE],
+	* tta/C/structuring_transfo/structuring.c
+	(check_node_tree_menu_structure) [CHECK_NORMAL_MENU_STRUCTURE]:
+	For a misplaced entry in the menu of the "Top" node, do not
+	output warnings about incorrect "node up pointer".  It is possible
+	that this is part of a master menu listing all nodes in the
+	document, and this part of the menu wasn't wrapped in
+	@detailmenu ... @end detailmenu.  This may be the case for ancient
+	Texinfo manuals from before when this command was invented.
+
 2026-10-31  Gavin Smith  <gavinsmith0123@gmail.com>, and
             Patrice Dumas  <pertusus@free.fr>
 

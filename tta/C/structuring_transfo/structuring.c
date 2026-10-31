@@ -1694,6 +1694,8 @@ check_node_tree_menu_structure (DOCUMENT *document)
   if (!options
       || options->CHECK_NORMAL_MENU_STRUCTURE.o.integer > 0)
     {
+      const ELEMENT *top_node
+          = find_identifier_target (identifiers_target, "Top");
       for (i = 0; i < nodes_list->number; i++)
         {
           const NODE_RELATIONS *node_relations = nodes_list->list[i];
@@ -1702,6 +1704,8 @@ check_node_tree_menu_structure (DOCUMENT *document)
           const CONST_ELEMENT_LIST *menus = node_relations->menus;
           if (!menus)
             continue;
+
+          int in_top_node = (node == top_node);
 
           const ELEMENT *menu_prev_node = NULL;
           const ELEMENT **menu_prev_node_directions = NULL;
@@ -1733,9 +1737,14 @@ check_node_tree_menu_structure (DOCUMENT *document)
                   if (!node_automatic_directions (menu_node))
                     menu_node_directions = menu_node_relations->node_directions;
 
+                  /* Warn if the Up node of a listed node is not the current
+                     node.  Omit these warnings for the Top node menu, in case
+                     @detailmenu was missing around a listing of all nodes in
+                     the manual. */
                   if (menu_node_directions
                       && menu_node_directions[D_up]
-                      && menu_node_directions[D_up] != node)
+                      && menu_node_directions[D_up] != node
+                      && !in_top_node)
                     {
                       char *direction = "up";
                       char *menu_node_texi

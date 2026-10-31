@@ -301,10 +301,7 @@ in node following second
 * node up node following second::
 ';
 
-$result_errors{'rec_nodes'} = '* W l6|node up pointer for `node following second\' is `node up node following second\' but up is `Top\' in menu
- warning: node up pointer for `node following second\' is `node up node following second\' but up is `Top\' in menu
-
-* W l13|node up pointer for `chap node\' is `Top\' but up is `chap node\' in menu
+$result_errors{'rec_nodes'} = '* W l13|node up pointer for `chap node\' is `Top\' but up is `chap node\' in menu
  warning: node up pointer for `chap node\' is `Top\' but up is `chap node\' in menu
 
 * W l13|node prev pointer for `chap node\' is `Top\' but prev is `other node\' in menu

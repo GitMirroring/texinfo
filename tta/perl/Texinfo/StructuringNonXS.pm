@@ -1000,9 +1000,12 @@ sub check_node_tree_menu_structure($) {
   # loop over all the menus in all the nodes and check for
   # mismatch with any explicit node pointers.
   if ($customization_information->get_conf('CHECK_NORMAL_MENU_STRUCTURE')) {
+    my $top_node = $identifier_target->{'Top'};
     foreach my $node_relations (@{$nodes_list}) {
       my $node = $node_relations->{'element'};
       next if !$node_relations->{'menus'};
+
+      my $in_top_node = ($node eq $top_node);
 
       my ($menu_prev_node, $menu_prev_node_directions);
       foreach my $menu (@{$node_relations->{'menus'}}) {
@@ -1024,9 +1027,13 @@ sub check_node_tree_menu_structure($) {
             $menu_node_directions = $menu_node_relations->{'node_directions'};
           }
 
+          # Warn if the Up node of a listed node is not the current node.
+          # Omit these warnings for the Top node menu, in case @detailmenu
+          # was missing around a listing of all nodes in the manual.
           if (defined($menu_node_directions)
               and exists($menu_node_directions->{'up'})
-              and $menu_node_directions->{'up'} ne $node) {
+              and $menu_node_directions->{'up'} ne $node
+              and !$in_top_node) {
             my $direction = 'up';
             $document->document_line_warn(
      sprintf(__("node %s pointer for `%s' is `%s' but %s is `%s' in menu"),

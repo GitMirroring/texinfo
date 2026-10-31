@@ -591,10 +591,7 @@ stuff here.
 stuff here.
 ';
 
-$result_errors{'quote_node_names'} = '* W nodequote.texi:l36|node up pointer for `normal node\' is `(man_ual)direct::i.on\' but up is `Top\' in menu
- warning: node up pointer for `normal node\' is `(man_ual)direct::i.on\' but up is `Top\' in menu
-
-* W nodequote.texi:l36|node prev pointer for `normal node\' is `(man_ual)direct@comma{}ion\' but prev is `blumpty.fump\' in menu
+$result_errors{'quote_node_names'} = '* W nodequote.texi:l36|node prev pointer for `normal node\' is `(man_ual)direct@comma{}ion\' but prev is `blumpty.fump\' in menu
  warning: node prev pointer for `normal node\' is `(man_ual)direct@comma{}ion\' but prev is `blumpty.fump\' in menu
 
 * W nodequote.texi:l37|node next pointer for `normal node\' is `(man@comma{}u:a.l)direction\' but next is `@asis{secret,node}\' in menu
