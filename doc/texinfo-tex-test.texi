@@ -1515,6 +1515,7 @@ ee
 
 @tex
 \gdef \commenceindexnopage{%
+\vskip\chapheadingskip
 \begingroup
 \smallfonts \rm
 \begindoublecolumns
@@ -2402,7 +2403,6 @@ Check that the index starts on the same page as the heading
 @page
 
 @heading Function Index
-@vskip@chapheadingskip
 
 @commenceindexnopage
 @initial {T}
@@ -2512,7 +2512,6 @@ Check that the index starts on the same page as the heading
 
 
 @heading Variable Index
-@vskip@chapheadingskip
 @commenceindexnopage
 @initial {A}
 @entry{@code {AmSTeX-clean-intermediate-suffixes}}{67}
