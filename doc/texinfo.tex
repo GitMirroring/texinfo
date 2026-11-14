@@ -3,7 +3,7 @@
 % Load plain if necessary, i.e., if running under initex.
 \expandafter\ifx\csname fmtname\endcsname\relax\input plain\fi
 %
-\def\texinfoversion{2026-11-14.12}
+\def\texinfoversion{2026-11-14.13}
 %
 % Copyright 1985, 1986, 1988, 1990-2026 Free Software Foundation, Inc.
 %
@@ -6470,7 +6470,7 @@ might help (with 'rm \jobname.?? \jobname.??s')%
     \or \appendixsubseczzz{#3}%
     \or \appendixsubsubseczzz{#3}%
     \fi
-  \else \if \headtype U%
+  \else \if \headtype N%
     \ifcase\absseclevel
        \chapterzzz{#3}%
     \or \seczzz{#3}%

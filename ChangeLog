@@ -1,5 +1,11 @@
 2026-11-14  Gavin Smith <gavinsmith0123@gmail.com>
 
+	Fix PDF listing of chapters
+
+	* doc/texinfo.tex (\genhead): correct a condition
+
+2026-11-14  Gavin Smith <gavinsmith0123@gmail.com>
+
 	* doc/texinfo.tex (\begindoublecolumns): Change threshold for
 	starting a new page from 20% of space remaining to 7 lines remaining.
 	This improves the output for the AUCTeX manual.
