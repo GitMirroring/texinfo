@@ -3,7 +3,7 @@
 % Load plain if necessary, i.e., if running under initex.
 \expandafter\ifx\csname fmtname\endcsname\relax\input plain\fi
 %
-\def\texinfoversion{2026-11-10.18}
+\def\texinfoversion{2026-11-14.11}
 %
 % Copyright 1985, 1986, 1988, 1990-2026 Free Software Foundation, Inc.
 %
@@ -6100,6 +6100,11 @@ might help (with 'rm \jobname.?? \jobname.??s')%
 
 \def\begindoublecolumns{\begingroup % ended by \enddoublecolumns
   % If not much space left on page, start a new page.
+  % The \penalty gives TeX a chance to break the page at an earlier
+  % breakpoint.  We may already be past a breakpoint where a page break
+  % would occur, and this prevents us from starting a new page when not
+  % necessary.
+  \penalty9999
   \ifdim\pagetotal>0.8\vsize\vfill\eject\fi
   %
   % Grab any single-column material above us.

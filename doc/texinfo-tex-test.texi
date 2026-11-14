@@ -2394,6 +2394,278 @@ line line line line line line}{9, 42}
 123, 2314, 123, 2314}
 @finishindex
 
+@section New page check
+
+Check that the index starts on the same page as the heading
+``Variable Index'', instead of a mostly blank page.
+
+@page
+
+@heading Function Index
+@vskip@chapheadingskip
+
+@commenceindexnopage
+@initial {T}
+@entry{@code {TeX--completion-at-point}}{26}
+@entry{@code {TeX-add-style-hook}}{81}
+@entry{@code {TeX-add-symbols}}{83}
+@entry{@code {TeX-arg-bibliography}}{83}
+@entry{@code {TeX-arg-bibstyle}}{84}
+@entry{@code {TeX-arg-cite}}{84}
+@entry{@code {TeX-arg-completing-read}}{84}
+@entry{@code {TeX-arg-completing-read-multiple}}{84}
+@entry{@code {TeX-arg-conditional}}{84}
+@entry{@code {TeX-arg-coordinate}}{84}
+@entry{@code {TeX-arg-corner}}{84}
+@entry{@code {TeX-arg-counter}}{84}
+@entry{@code {TeX-arg-date}}{84}
+@entry{@code {TeX-arg-define-counter}}{84}
+@entry{@code {TeX-arg-define-environment}}{84}
+@entry{@code {TeX-arg-define-label}}{85}
+@entry{@code {TeX-arg-define-length}}{85}
+@entry{@code {TeX-arg-define-macro}}{86}
+@entry{@code {TeX-arg-define-savebox}}{86}
+@entry{@code {TeX-arg-document}}{84}
+@entry{@code {TeX-arg-environment}}{84}
+@entry{@code {TeX-arg-eval}}{84}
+@entry{@code {TeX-arg-file}}{85}
+@entry{@code {TeX-arg-file-name}}{85}
+@entry{@code {TeX-arg-file-name-sans-extension}}{85}
+@entry{@code {TeX-arg-font-switches}}{85}
+@entry{@code {TeX-arg-free}}{85}
+@entry{@code {TeX-arg-hook}}{85}
+@entry{@code {TeX-arg-index}}{85}
+@entry{@code {TeX-arg-index-tag}}{85}
+@entry{@code {TeX-arg-input-file}}{85}
+@entry{@code {TeX-arg-key-val}}{85}
+@entry{@code {TeX-arg-label}}{85}
+@entry{@code {TeX-arg-length}}{85}
+@entry{@code {TeX-arg-literal}}{86}
+@entry{@code {TeX-arg-lr}}{86}
+@entry{@code {TeX-arg-macro}}{86}
+@entry{@code {TeX-arg-pagestyle}}{86}
+@entry{@code {TeX-arg-pair}}{86}
+@entry{@code {TeX-arg-ref}}{86}
+@entry{@code {TeX-arg-savebox}}{86}
+@entry{@code {TeX-arg-set-exit-mark}}{86}
+@entry{@code {TeX-arg-size}}{86}
+@entry{@code {TeX-arg-space}}{86}
+@entry{@code {TeX-arg-string}}{86}
+@entry{@code {TeX-arg-tb}}{86}
+@entry{@code {TeX-arg-verb}}{86}
+@entry{@code {TeX-arg-verb-delim-or-brace}}{86}
+@entry{@code {TeX-arg-version}}{87}
+@entry{@code {TeX-auto-add-regexp}}{91}
+@entry{@code {TeX-auto-generate}}{80}
+@entry{@code {TeX-clean}}{67}
+@entry{@code {TeX-command-buffer}}{51}
+@entry{@code {TeX-command-master}}{51}
+@entry{@code {TeX-command-region}}{51}
+@entry{@code {TeX-command-run-all}}{52}
+@entry{@code {TeX-comment-or-uncomment-paragraph}}{30}
+@entry{@code {TeX-comment-or-uncomment-region}}{30}
+@entry{@code {TeX-complete-symbol}}{26}
+@entry{@code {TeX-declare-expert-macros}}{87}
+@entry{@code {TeX-documentation-texdoc}}{68}
+@entry{@code {TeX-electric-macro}}{28}
+@entry{@code {TeX-error-overview}}{65}
+@entry{@code {TeX-fold-buffer}}{43}
+@entry{@code {TeX-fold-clearout-buffer}}{45}
+@entry{@code {TeX-fold-clearout-item}}{45}
+@entry{@code {TeX-fold-clearout-paragraph}}{45}
+@entry{@code {TeX-fold-clearout-region}}{45}
+@entry{@code {TeX-fold-clearout-section}}{45}
+@entry{@code {TeX-fold-comment}}{45}
+@entry{@code {TeX-fold-dwim}}{45}
+@entry{@code {TeX-fold-env}}{44}
+@entry{@code {TeX-fold-macro}}{44}
+@entry{@code {TeX-fold-math}}{44}
+@entry{@code {TeX-fold-mode}}{43}
+@entry{@code {TeX-fold-paragraph}}{44}
+@entry{@code {TeX-fold-region}}{44}
+@entry{@code {TeX-fold-section}}{44}
+@entry{@code {TeX-font}}{16}
+@entry{@code {tex-font-setup}}{36}
+@entry{@code {TeX-home-buffer}}{66}
+@entry{@code {TeX-insert-braces}}{14, 108}
+@entry{@code {TeX-insert-dollar}}{13}
+@entry{@code {TeX-insert-macro}}{27}
+@entry{@code {TeX-insert-quote}}{12}
+@entry{@code {TeX-interactive-mode}}{56}
+@entry{@code {TeX-ispell-skip-setcar}}{55}
+@entry{@code {TeX-ispell-skip-setcdr}}{55}
+@entry{@code {TeX-ispell-tex-arg-end}}{55}
+@entry{@code {TeX-kill-job}}{66, 109}
+@entry{@code {TeX-master-file-ask}}{71}
+@entry{@code {TeX-narrow-to-group}}{49}
+@entry{@code {TeX-next-error}}{63}
+@entry{@code {TeX-normal-mode}}{72}
+@entry{@code {TeX-PDF-mode}}{56}
+@entry{@code {TeX-pin-region}}{52}
+@entry{@code {TeX-previous-error}}{64}
+@entry{@code {TeX-read-hook}}{85}
+@entry{@code {TeX-read-key-val}}{85}
+@entry{@code {TeX-recenter-output-buffer}}{66}
+@entry{@code {TeX-revert-document-buffer}}{69}
+@entry{@code {TeX-save-document}}{71}
+@finishindex
+
+
+@heading Variable Index
+@vskip@chapheadingskip
+@commenceindexnopage
+@initial {A}
+@entry{@code {AmSTeX-clean-intermediate-suffixes}}{67}
+@entry{@code {AmSTeX-clean-output-suffixes}}{67}
+@entry{@code {AmSTeX-mode-hook}}{69}
+@initial {C}
+@entry{@code {ConTeXt-clean-intermediate-suffixes}}{67}
+@entry{@code {ConTeXt-clean-output-suffixes}}{67}
+@entry{@code {ConTeXt-engine}}{58}
+@entry{@code {ConTeXt-Mark-version}}{59}
+@entry{@code {ConTeXt-mode-hook}}{69}
+@entry{@code {ConTeXt-Omega-engine}}{58}
+@initial {D}
+@entry{@code {docTeX-clean-intermediate-suffixes}}{67}
+@entry{@code {docTeX-clean-output-suffixes}}{67}
+@entry{@code {docTeX-indent-across-comments}}{33}
+@entry{@code {docTeX-mode-hook}}{69}
+@initial {F}
+@entry{@code {fill-column}}{33}
+@entry{@code {font-latex-deactivated-keyword-classes}}{40}
+@entry{@code {font-latex-fontify-script}}{41}
+@entry{@code {font-latex-fontify-script-max-level}}{41}
+@entry{@code {font-latex-fontify-sectioning}}{38}
+@entry{@code {font-latex-match-bold-command-keywords}}{39}
+@entry{@code {font-latex-match-bold-declaration-keywords}}{39}
+@entry{@code {font-latex-match-function-keywords}}{38}
+@entry{@code {font-latex-match-italic-command-keywords}}{39}
+@entry{@code {font-latex-match-italic-declaration-keywords}}{39}
+@entry{@code {font-latex-match-math-command-keywords}}{39, 41}
+@entry{@code {font-latex-match-reference-keywords}}{38}
+@entry{@code {font-latex-match-sectioning-0-keywords}}{38}
+@entry{@code {font-latex-match-sectioning-1-keywords}}{38}
+@entry{@code {font-latex-match-sectioning-2-keywords}}{38}
+@entry{@code {font-latex-match-sectioning-3-keywords}}{38}
+@entry{@code {font-latex-match-sectioning-4-keywords}}{38}
+@entry{@code {font-latex-match-sectioning-5-keywords}}{38}
+@entry{@code {font-latex-match-slide-title-keywords}}{38}
+@entry{@code {font-latex-match-textual-keywords}}{38}
+@entry{@code {font-latex-match-type-command-keywords}}{39}
+@entry{@code {font-latex-match-type-declaration-keywords}}{39}
+@entry{@code {font-latex-match-underline-command-keywords}}{39}
+@entry{@code {font-latex-match-variable-keywords}}{38}
+@entry{@code {font-latex-match-warning-keywords}}{38}
+@entry{@code {font-latex-math-environments}}{41}
+@entry{@code {font-latex-quotes}}{41}
+@entry{@code {font-latex-script-char-face}}{42}
+@entry{@code {font-latex-script-display}}{42}
+@entry{@code {font-latex-sectioning-0-face}}{38}
+@entry{@code {font-latex-sectioning-1-face}}{38}
+@entry{@code {font-latex-sectioning-2-face}}{38}
+@entry{@code {font-latex-sectioning-3-face}}{38}
+@entry{@code {font-latex-sectioning-4-face}}{38}
+@entry{@code {font-latex-sectioning-5-face}}{38}
+@entry{@code {font-latex-slide-title-face}}{38}
+@entry{@code {font-latex-subscript-face}}{41}
+@entry{@code {font-latex-superscript-face}}{41}
+@entry{@code {font-latex-user-keyword-classes}}{40}
+@initial {J}
+@entry{@code {japanese-LaTeX-default-style}}{78}
+@entry{@code {japanese-TeX-engine-default}}{77}
+@entry{@code {japanese-TeX-mode}}{77}
+@entry{@code {japanese-TeX-use-kanji-opt-flag}}{78}
+@initial {L}
+@entry{@code {LaTeX-amsmath-label}}{20}
+@entry{@code {LaTeX-auto-class-regexp-list}}{73}
+@entry{@code {LaTeX-auto-counter-regexp-list}}{73}
+@entry{@code {LaTeX-auto-index-regexp-list}}{73}
+@entry{@code {LaTeX-auto-label-regexp-list}}{73}
+@entry{@code {LaTeX-auto-length-regexp-list}}{73}
+@entry{@code {LaTeX-auto-minimal-regexp-list}}{73}
+@entry{@code {LaTeX-auto-pagestyle-regexp-list}}{73}
+@entry{@code {LaTeX-auto-regexp-list}}{73}
+@entry{@code {LaTeX-auto-savebox-regexp-list}}{73}
+@entry{@code {LaTeX-babel-hyphen}}{76}
+@entry{@code {LaTeX-babel-hyphen-after-hyphen}}{76}
+@entry{@code {LaTeX-babel-hyphen-language-alist}}{76}
+@entry{@code {LaTeX-begin-regexp}}{32}
+@entry{@code {LaTeX-bib-annotation-max-length}}{27}
+@entry{@code {LaTeX-biblatex-use-Biber}}{53}
+@entry{@code {LaTeX-@var {classname}-class-options}}{91}
+@entry{@code {LaTeX-clean-intermediate-suffixes}}{67}
+@entry{@code {LaTeX-clean-output-suffixes}}{67}
+@entry{@code {LaTeX-command}}{58}
+@entry{@code {LaTeX-csquotes-close-quote}}{12}
+@entry{@code {LaTeX-csquotes-open-quote}}{12}
+@entry{@code {LaTeX-csquotes-quote-after-quote}}{12}
+@entry{@code {LaTeX-default-author}}{83}
+@entry{@code {LaTeX-default-document-environment}}{19}
+@entry{@code {LaTeX-default-environment}}{19}
+@entry{@code {LaTeX-default-format}}{22}
+@entry{@code {LaTeX-default-options}}{84}
+@entry{@code {LaTeX-default-position}}{22}
+@entry{@code {LaTeX-default-style}}{84}
+@entry{@code {LaTeX-default-width}}{22}
+@entry{@code {LaTeX-done-mark}}{17}
+@entry{@code {LaTeX-electric-left-right-brace}}{14}
+@entry{@code {LaTeX-enable-toolbar}}{51}
+@entry{@code {LaTeX-end-regexp}}{32}
+@entry{@code {LaTeX-eqnarray-label}}{20}
+@entry{@code {LaTeX-equation-label}}{20}
+@entry{@code {LaTeX-figure-label}}{21}
+@entry{@code {LaTeX-fill-break-at-separators}}{35}
+@entry{@code {LaTeX-fill-break-before-code-comments}}{35}
+@entry{@code {LaTeX-fill-excluded-macros}}{35}
+@entry{@code {LaTeX-float}}{21}
+@entry{@code {LaTeX-flymake-chktex-options}}{66}
+@entry{@code {LaTeX-fold-env-spec-list}}{46}
+@entry{@code {LaTeX-fold-macro-spec-list}}{46}
+@entry{@code {LaTeX-fold-math-spec-list}}{46}
+@entry{@code {LaTeX-font-list}}{16}
+@entry{@code {LaTeX-indent-environment-check}}{31}
+@entry{@code {LaTeX-indent-environment-list}}{30, 31}
+@entry{@code {LaTeX-indent-level}}{30, 31}
+@entry{@code {LaTeX-insert-into-comments}}{30}
+@entry{@code {LaTeX-item-indent}}{30, 31}
+@entry{@code {LaTeX-item-regexp}}{30}
+@entry{@code {LaTeX-label-alist}}{19}
+@entry{@code {LaTeX-label-annotation-max-length}}{27}
+@entry{@code {LaTeX-level}}{17}
+@entry{@code {LaTeX-listing-label}}{21}
+@entry{@code {LaTeX-math-abbrev-prefix}}{23}
+@entry{@code {LaTeX-math-default}}{23}
+@entry{@code {LaTeX-math-list}}{23}
+@entry{@code {LaTeX-math-menu-unicode}}{23}
+@entry{@code {LaTeX-mode-hook}}{69}
+@entry{@code {LaTeX-name}}{17}
+@entry{@code {LaTeX-Omega-command}}{58}
+@entry{@code {LaTeX-@var {packagename}-package-options}}{90}
+@entry{@code {LaTeX-paragraph-commands}}{34}
+@entry{@code {LaTeX-provided-class-options}}{90}
+@entry{@code {LaTeX-provided-package-options}}{90}
+@entry{@code {LaTeX-section-hook}}{17}
+@entry{@code {LaTeX-section-label}}{17, 18}
+@entry{@code {LaTeX-short-caption-prompt-length}}{21}
+@entry{@code {LaTeX-style-list}}{84}
+@entry{@code {LaTeX-syntactic-comments}}{31}
+@entry{@code {LaTeX-table-label}}{21}
+@entry{@code {LaTeX-title}}{17}
+@entry{@code {LaTeX-toc}}{17}
+@entry{@code {LaTeX-top-caption-list}}{21}
+@entry{@code {LaTeX-verbatim-environments}}{42}
+@entry{@code {LaTeX-verbatim-macros-with-braces}}{42}
+@entry{@code {LaTeX-verbatim-macros-with-delims}}{42}
+@initial {O}
+@entry{@code {outline-regexp}}{29}
+@initial {P}
+@entry{@code {plain-TeX-auto-regexp-list}}{73}
+@entry{@code {plain-TeX-clean-intermediate-suffixes}}{67}
+@entry{@code {plain-TeX-clean-output-suffixes}}{67}
+@entry{@code {plain-TeX-enable-toolbar}}{51}
+@entry{@code {plain-TeX-mode-hook}}{69}
+@finishindex
+
 
 @section Non-alphanumeric Index Initials
 
