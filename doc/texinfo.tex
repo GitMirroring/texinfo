@@ -3,7 +3,7 @@
 % Load plain if necessary, i.e., if running under initex.
 \expandafter\ifx\csname fmtname\endcsname\relax\input plain\fi
 %
-\def\texinfoversion{2026-11-14.11}
+\def\texinfoversion{2026-11-14.12}
 %
 % Copyright 1985, 1986, 1988, 1990-2026 Free Software Foundation, Inc.
 %
@@ -155,6 +155,9 @@
 
 % scratch count register
 \newcount\countA
+
+% scratch dimen register
+\newdimen\dimenA
 
 % Give the space character the catcode for a space.
 \def\spaceisspace{\catcode`\ =10\relax}
@@ -6105,7 +6108,9 @@ might help (with 'rm \jobname.?? \jobname.??s')%
   % would occur, and this prevents us from starting a new page when not
   % necessary.
   \penalty9999
-  \ifdim\pagetotal>0.8\vsize\vfill\eject\fi
+  \dimenA=\vsize
+  \advance\dimenA by -7\baselineskip
+  \ifdim\pagetotal>\dimenA\vfill\eject\fi
   %
   % Grab any single-column material above us.
   \output = {%

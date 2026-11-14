@@ -1,5 +1,13 @@
 2026-11-14  Gavin Smith <gavinsmith0123@gmail.com>
 
+	* doc/texinfo.tex (\begindoublecolumns): Change threshold for
+	starting a new page from 20% of space remaining to 7 lines remaining.
+	This improves the output for the AUCTeX manual.
+
+	Report from Arash Esbati <arash@gnu.org> for AUCTeX manual.
+
+2026-11-14  Gavin Smith <gavinsmith0123@gmail.com>
+
 	* doc/texinfo-tex-test.texi (\commenceindexnopage): move \vskip
 	inside macro defintion.
 
